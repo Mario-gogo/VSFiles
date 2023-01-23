@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    
+    <div>
+        <label>First Name:* </label>
+        <input type="text" name="first=name">
+    </div>
+
+    <div>
+        <label>Last Name:* </label>
+        <input type="text" name="last-name">
+    </div>
+
+    <div>
+        <label>Email Address:* </label>
+        <input type="text" name="email">
+    </div>
+
+    <div>
+        <label>Password:* </label>
+        <input type="password" name="password">
+    </div>
+
+    <div>
+        <label>Confirm Password:* </label>
+        <input type="password" name="password">
+    </div>
+
+    <div>
+        <label>Birthday: </label>
+        <input type="date" name="dob">
+    </div>
+
+    <div>
+        <label>Gender Identity: </label>
+        <div>
+            <input type="radio" name="genderID" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="genderID" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="genderID" value="nobinary" id="nobinary">
+            <label for="nobinary">Non-binary</label>
+            <input type="radio" name="genderID" value="noanswer" id="noanswer">
+            <label for="noanswer">I prefer not to answer</label>
+        </div>
+    </div>
+
+    <div>
+        <label>A short description about myself:</label>
+        <div>
+            <textarea name="myself" cols="20" rows="3"></textarea>
+        </div>
+    </div>
+
+    <div>
+        <label>Favorite Language:</label>
+        <select name="language">
+            <option>Javascript</option>
+            <option>HTML</option>
+            <option>Spanish</option>
+            <option>C++</option>
+        </select>
+    </div>
+    
+    <div><input type="checkbox" name="agreement" id="agreement">
+    <label for="agreement">Yes, I would like to receive periodic email updates</label>
+    </div>
+
+    <div>
+        <input type="submit" value="Create Account">
+    </div>
+    <p>* Indicates a required field</p>
+</body>
+</html>
+
+
+<!--Notes to myself:
+Most inputs start with "input" followed by type="". The ones I didn't need to do that for was select (which required a "name")
+and textarea. Select does need "option"s to be nested in. 
+-->
